@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>RemoteteamIO</title>
+</head>
+<body>
+    <header class="row align-items-center">
+        <div class="col-4">
+          <a href="/login.html" style="background-color: inherit;"><img  src="/imgs/iconpng_200x60.png" class="img-fluid" alt=""></a>  
+        </div>
+        <div class="col  ">
+            <nav class="navbar ">
+                <form class="form-inline my-2 ">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav flex-row ">
+                    <li class="nav-item mx-1">
+                      <button>Favourite</button>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <button>Notification </button>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <button>+ Task </button>
+                    </li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+
+    <main class="row">
+
+      
+        <aside class="col-4 " >
+            <div class="nav-category">
+                <div class="border-top border-bottom p-2  d-flex flex-wrap justify-content-between align-items-center">
+                    <h2>My WorkSpace</h2>
+                    <a class="p-2" href="/workspaceForm.html">+ New </a>
+                </div>
+                
+                <div class="border-top border-bottom p-2  d-flex flex-wrap justify-content-between align-items-center">
+                    <h3 class="">Projects       </h3>
+                    <button class="">+ New </button>
+                </div>
+
+                <ul class="projects pr-3 pl-1">
+                
+                    <li>Project1 </li>
+                    <ul>
+                        <li>task1.1</li>
+                        <li>task1.2</li>
+                        <li>task1.3</li>
+                    </ul>
+                    <li>Project2</li>
+                    <li>Project3</li>
+                    <ul>
+                        <li>task3.1</li>
+                        <li>task3.2</li>
+                        <li>task3.3</li>
+                    </ul>
+                    <li>Project4</li>
+                </ul>
+            </div>
+            
+        </aside>
+
+        <section class="col-8" >
+            <div class="m-3" id="structureBtns" onclick="changeViewStructure()">
+                <button id="listview" class="">LIST VIEW</button>
+                <button id="boardview" class="">BOARD VIEW</button>
+            </div>
+
+            <h4 id="projectname">Project1</h4>
+            
+            <div id="view">
+
+            </div>
+            <!-- <ul id="#boardview" class="d-flex flex-row justify-content-between overflow-auto" style="list-style-type: none;">
+                <li class="col" >
+                   <div class="card text-center m-3" style="background-color: #ddddddf1; border-top:4px solid gray">
+                    <div >open</div>
+                    </div>
+                    <ul class="open">
+                    </ul>
+                </li>
+                <li class="col"  >
+                   <div class="card text-center m-3" style="background-color: #ddddddf1; border-top:4px solid yellow">
+                    <div >planned</div>
+                    </div>
+                    <ul class="planned">
+
+                    </ul>
+                </li>
+                <li class="col"  >
+                   <div class="card text-center m-3" style="background-color: #ddddddf1; border-top:4px solid royalblue">
+                    <div >in progress</div>
+                    </div>
+                    <ul class="in_progress">
+                    </ul>
+                </li>
+                <li class="col"  >
+                   <div class="card text-center m-3" style="background-color: #ddddddf1; border-top:4px solid violet">
+                    <div >QC</div>
+                    </div>
+                    <ul class="qc">
+
+                    </ul>
+                </li>
+                <li class="col"  >
+                   <div class="card text-center m-3" style="background-color: #ddddddf1; border-top:4px solid green">
+                    <div >Closed</div>
+                    </div>
+                    <ul class="closed"></ul>
+                </li>
+            </ul> -->
+        </section>
+
+        
+
+    </main>
+    <script src="main.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    
+
+
+</body>
+</html>
